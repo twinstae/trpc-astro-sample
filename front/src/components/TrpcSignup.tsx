@@ -15,12 +15,12 @@ function Signup(){
     <>
       <button
         className="p-2 rounded-xl bg-red-300 shadow-lg"
-        onClick={() => createUserMutation.mutateAsync({name: 'test' + Math.floor(Math.random()*1000)})}>
+        onClick={() => createUserMutation.mutateAsync({ name: 'test' + Math.floor(Math.random()*1000) })}>
         add user
       </button>
       <button
         className="p-2 rounded-xl bg-red-300 shadow-lg ml-2"
-        onClick={() =>clearUsersMutation.mutateAsync({})}
+        onClick={() => clearUsersMutation.mutateAsync({})}
       >
         초기화
       </button>
